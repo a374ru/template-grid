@@ -1,6 +1,4 @@
-body {
-	margin: 0;
-}
+/* @import 'bgr.css'; */
 
 
 SECTION {
@@ -11,7 +9,7 @@ SECTION {
 
 	/* 
 	Расстояние для горизонтальных и вертикальных ТРЕКов между ячейками сетки, они же ГАПЫ */
-	gap: 7px;
+	gap: 17px;
 
 	/* 
 	Высота `SECTION`. 
@@ -52,9 +50,9 @@ SECTION {
 }
 
 .общие-свойства {
-	background-color: #dfff5233;
-	border: 2px solid #dda01c;
-	padding: 12px;
+	background-color: #51137d33;
+	/* border: 16px dashed #ffffff99; */
+	padding: 14px;
 }
 
 HEADER {
@@ -87,7 +85,13 @@ FOOTER {
 
 @MEDIA (max-width: 425px) {
 	section {
-		display: block;
+		/* Новое определение шаблона GRID для мини экранчиков */
+		grid-template: "h""n""M""a"".""f"/ 1fr;
+		align-content: auto;
+	}
+
+	header {
+		margin-bottom: 0px;
 	}
 }
 
