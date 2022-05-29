@@ -6,11 +6,12 @@ body {
 	/* Заменяем дефолтноые свойства на нули.
 	Чтобы не было отступов по краям страницы */
 	margin: 0;
-
+	/* height: 100vh; */
 	/* Фоновое изо в формате  SVG */
-	background-color: #ffd8fe;
+	background-color: #fff0cf;
+	;
 	background-image: url(bg.svg);
-	/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='25px' height='25px' patternUnits='userSpaceOnUse' patternTransform='scale(1.08)'%3E%3Cpath id='a' data-color='fill' fill='none' stroke='%23FAFAFA' stroke-width='2.01' d='M50 50h50v50H50zM0 0h50v50H0z'%3E%3C/path%3E%3Cuse xlink:href='%23a' x='50' y='-50'%3E%3C/use%3E%3Cuse xlink:href='%23a' x='-50' y='50'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E"); */
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='25px' height='25px' patternUnits='userSpaceOnUse' patternTransform='scale(1.08)'%3E%3Cpath id='a' data-color='fill' fill='none' stroke='%23FAFAFA' stroke-width='2.01' d='M50 50h50v50H50zM0 0h50v50H0z'%3E%3C/path%3E%3Cuse xlink:href='%23a' x='50' y='-50'%3E%3C/use%3E%3Cuse xlink:href='%23a' x='-50' y='50'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -18,22 +19,4 @@ body {
 	/* Функция `clamp()`  управляет масштабом текста при ресайзинге окна браузера (вьюпорта - зона видимости) */
 	font-size: clamp(1.1em, 2vw, 2.5rem);
 
-}
-
-MAIN {
-
-	grid-template-areas:
-		/* занимает  три столбика (места),  в каждой из четырех строк
-
-		Пример записи схемы шаблона-grid на одной строке:   
-		"h h h"   "n M a"   ". . ."   "f f f" ;
-		*/
-
-		"h  h  h"
-		"n  S  a"
-		/* далее идет пустая строка шаблона. Её параметры заданы в YSTM-3333  и это `1fr` . Попробуте поставить только вместо средней точки литеру `M` и просмотрите изменения в браузере. */
-		".   .   ."
-		/* !!! …эта строка никак не связана с элементами, но прописана здесь обязательно для растяжки страницы .  Вместо неё может быть элемент(ы).*/
-		"f  f  f"
-	;
 }

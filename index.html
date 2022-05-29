@@ -1,41 +1,48 @@
-<html>
-<html lang="ru">
-<!-- 
+<!DOCTYPE html>
+  <html lang="ru">
+    <!--  Все комментари в файле STYLE.CSS  -->
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+        name="description"
+        content="Пример сетки grid с футером и подробными коментариями в коде css."
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <title>СЕТКА-ШАБЛОН ГРИД С КОММЕНТАМИ В КОДЕ</title>
+    </head>
+    <body>
+      <main class="main">
+        <header class="общие-свойства шапка">HEADER h:77px</header>
+        <nav class="общие-свойства навигатор">
+          <a href="###">NAV</a>
+          <hr />
+          w:7em
+        </nav>
+        <section class="общие-свойства секция">
+					MAIN
+          <hr />
+          w:1fr
+        </section>
+        <aside class="общие-свойства aside">
+          <a href="###">ASIDE </a>
+          <hr />
+          w:9em
+        </aside>
+
+<ARTICLE class="content">
 	
-	Все комментари в файле STYLE.CSS 
+	
+					<h2>Сетка <code>GRID</code> работает так: <br>
+						Если html элемент находится внутри html-элемента со свойством <code>grid</code>, то к этому элементу также автоматом применяются свойства <code>grid</code>. Поэтому <i>все элементы-html</i> в сетке должны быть определенны в шаблоне <code>grid-template-areas</code>.</h2>
 
--->
+</ARTICLE>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Пример сетки grid с футером и подробными коментариями в коде css.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>СЕТКА-ШАБЛОН ГРИД С КОММЕНТАМИ В КОДЕ</title>
-</head>
+				
+        <footer class="общие-свойства подвал">FOOTER h:33px</footer>
+      </main>
+    </body>
+  </html>
+</DOCTYPE>
 
-
-<body>
-	<MAIN class="main">
-		<HEADER class="общие-свойства шапка">
-			HEADER h:77px
-		</HEADER>
-		<nav class="общие-свойства навигатор">
-			<a href="###">NAV</a>
-			<hr> w:7em
-		</nav>
-		<SECTION class="общие-свойства секция">
-			MAIN
-			<hr>w:1fr
-		</SECTION>
-		<ASIDE class="общие-свойства aside">
-			<a href="###">ASIDE </a>
-			<hr> w:9em
-		</ASIDE>
-		<FOOTER class="общие-свойства подвал">FOOTER h:33px</FOOTER>
-	</MAIN>
-</body>
-
-
-</html>
