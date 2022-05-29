@@ -82,8 +82,10 @@ MAIN {
 
 ARTICLE {
   grid-area: cont;
+  margin: 0 1vw;
   padding: 0px 3vw;
   color: darkslategrey;
+  border: 11px dashed aliceblue;
 }
 
 ARTICLE i {
